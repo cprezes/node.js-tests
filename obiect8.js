@@ -16,3 +16,12 @@ function greet(name, greeting) {
   console.log( greet1()); // Welcome Student!
   console.log(greet1('John')); 
   console.log(greet1('Red', 'Socks')); 
+
+
+  function shippingLabel(name, address) {
+    name = (typeof name !== 'undefined') ? name : 'Richard';
+    address = (typeof address !== 'undefined') ?  address : 'Mountain View';
+    return `To: ${name} In: ${address}`;
+  }
+
+  console.log(shippingLabel());
